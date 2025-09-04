@@ -1,0 +1,7 @@
+docker build -t fastapi-webapp-demo .
+
+docker run -d -p 80:80 fastapi-webapp-demo
+
+docker tag fastapi-webapp-demo dockerfastapi.azurecr.io/fastapi-webapp-demo
+
+docker push dockerfastapi.azurecr.io/fastapi-webapp-demo
